@@ -3,36 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cards</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: green;
+            margin: 0;
+        }
+h3{
+display: flex;
+flex-direction: row;}
+        .container {
+            display: flex;
+            gap: 20px;
+            max-width: 900px;
+            margin: 20px; 
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 20px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+          border-radius:10px;
+            width: 100%;
+            height: 200px;
+            object-fit: fill;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .card h2 {
+          text-align: center;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+          color: #0dc726;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+        }
+
+        .card li {
+            color: #0a66dd;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .card button {
+            padding: 10px 20px; 
+            background-color: blue;;
+            color: white;
+            text-decoration: none;
+            border: 50px;
+            transition: background-color 0.3s ease; 
+            width: 100%;
+        }
+    </style>
 </head>
-<style>
-    body{
-        background-color: rgb(1, 1, 71);
-        color: white;
-    }
-    section{
-        background-color: rgb(129, 5, 5);
-        margin-right: 600px;
-        margin-left: 60px;
-        margin-top: 80px;
-        padding: 50px;
-        border: 10px;
-    }
-    button{
-        background-color: rgb(1, 1, 71);
-        color: white;
-        padding: 6px
-    }
-</style>
-<body>
-    <section><h1>Corporate Training Made Easy</h1>
-   <p> Engaging and empowering learning through technology. Edutor is the perfect theme for your Moodle LMS platform.</p>
-  <ul> 
-   <li> List item example lorem ipsum</li>
-   <li> List item example lorem ipsum</li>
-   <li> List item example lorem ipsum </li>
-</ul>
-<button>Get Started</button>
- </section>
+<body><h3 class="container" style="text-align:center;color: aliceblue;">How to create "Card" with CSS</h3>
+    <div class="container">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZltWAybxiQWWlopL0QWknZIZmxhuCtX6BCA&s" alt="DevOps Card">
+            <div class="card-content">
+                <h2>DevOps Card</h2>
+                <p >DevOps is a collection of two words, "Development" and "Operations," representing a cultural approach that emphasizes collaboration between development and operations teams to streamline the entire software delivery lifecycle.</p>
+                <ul>
+                    <li>Continuous Integration (CI)</li>
+                    <li>Continuous Deployment (CD)</li>
+                    <li>Infrastructure as Code (IaC)</li>
+                </ul>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfiGbT7FNpHyf_nY6TPJYbcgenR_TnhpzJKg&s" alt="Full Stack Card">
+            <div class="card-content">
+                <h2>Full Stack Web Developer Roadmap</h2>
+                <p class="color">A comprehensive roadmap for becoming a full stack developer, covering various technologies and skills required in both front-end and back-end development.</p>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                </ul>
+                <button>Read More....</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1q5k91JcTBVRZ8-cg04LzvFbRclP8CpkUOg&s" alt="Web Trends Card">
+            <div class="card-content">
+                <h2>Web Development Trends</h2>
+                <p class="color">Explore the latest trends in web development, including advancements in technologies, frameworks, and best practices shaping the future of web development.</p>
+                <ul>
+                    <li>Progressive Web Apps (PWAs)</li>
+                    <li>Serverless Architecture</li>
+                    <li>Single Page Applications (SPAs)</li>
+                </ul>
+                <button>Read More....</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
