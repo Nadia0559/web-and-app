@@ -1,71 +1,110 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Nepal Inspired Navbar</title>
+    <title>Why Choose Us Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
-       
-        nav {
-            background-color: #007bff;  
-          color: white;
-            padding: 10px 20px;
+        body {
+            font-family: sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }.main{
             display: flex;
-            justify-content: space-between; 
-            align-items: center; 
+            height: 450px;
+            background-color: #c7c2c2;
+            margin: 100px 200px;
+        }
+        
+        .left-section {
+            width: 50%;
+            padding: 50px;
+            box-sizing: border-box;
+            text-align: centers;
+            margin-left: 30px;
+        }
+        
+        .right-section {
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .right-section img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        
+        .why-choose {
+            margin-bottom: 20px;
+        }
+        
+        .why-choose h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .why-choose p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            text-transform: capitalize;
         }
 
-        .logo {
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        .nav-links {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+        .icon-item {
             display: flex;
+            align-items: center;
         }
-
-        .nav-links li {
-            margin-left: 20px; 
+        
+        .icon-item img {
+            width: 10px;
+            margin-right: 100px;
         }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-
-       
-        .nav-links a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-        }
-
-       
-        @media (max-width: 768px) {
-            .nav-links {
-                flex-direction: column; 
-                text-align: center; 
-            }
-            .nav-links li {
-                margin: 10px 0;
-            }
+        i{
+            color: rgba(138, 107, 5, 0.945);
+    background-color: aliceblue;
+    font-size:30px;
+    padding: 4px;
+text-align: center;
+margin: 0px 6px;
         }
     </style>
 </head>
 <body>
-
-    <nav>
-        <div class="logo">CodingNepal</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Feedback</a></li>
-        </ul>
-    </nav>
-
-    </body>
+<div class="main">
+    <div class="left-section">
+        <div class="why-choose">
+            <h2>Why Choose Us_</h2>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet.</p>
+        </div>
+        <div class="icon-grid">
+            <div class="icon-item">
+                <div><i class="fa-solid fa-check"></i></div><div><p>Qulity<br><b>Services</b></div>
+            </div>
+            <div class="icon-item">
+                <div><i class="fa-solid fa-user"></i></div><div>creative <br><b>Developers</b></div>
+            </div>
+            <div class="icon-item">
+                <div><i class="fa-solid fa-spa"></i></div><div><p>free<br><b>consultation</b></div>
+            </div>
+            <div class="icon-item">
+                <div><i class="fa-solid fa-headphones"></i></div><div><p>customer<br><b>support</b></div>
+            </div>
+        </div>
+    </div>
+    <div class="right-section">
+         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/90eba5136283325.61f705921270b.jpg" alt="">
+    </div>
+</div>
+</body>
 </html>
